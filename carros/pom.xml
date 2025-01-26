@@ -12,7 +12,7 @@
 	<artifactId>carros</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>carros</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Carros no Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
