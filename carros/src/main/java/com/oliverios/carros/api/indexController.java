@@ -8,8 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 public class indexController {
 	
-	@GetMapping
+	@GetMapping()
 	public String hello() {
 		return "Hello Spring Boot";
+	}
+	
+	@GetMapping("/teste")
+	public String teste() {
+		return "Teste Spring Boot";
 	}
 }
