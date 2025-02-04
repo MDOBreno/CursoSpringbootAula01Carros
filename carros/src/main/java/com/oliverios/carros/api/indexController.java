@@ -2,6 +2,7 @@ package com.oliverios.carros.api;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,10 +18,25 @@ public class indexController {
 		return "Get Spring Boot";
 	}
 	
-	@GetMapping("/login")
-	public String login(@RequestParam("login") String login, @RequestParam("senha") String senha) {
+	@GetMapping("/login/{login}/senha/{senha}")
+	public String login(@PathVariable("login") String login, @PathVariable("senha") String senha) {
 		return "Login " + login + ", senha: " + senha;
 	}
+	
+	@GetMapping("/carros/{id}")
+	public String getCarroById(@PathVariable Long id) {
+		return "Carro by id " + id;
+	}
+
+	@GetMapping("/carros/tipo/{tipo}")
+	public String getCarroById(@PathVariable String tipo) {
+		return "Lista de Carros " + tipo;
+	}
+	
+//	@GetMapping("/login")
+//	public String login(@RequestParam("login") String login, @RequestParam("senha") String senha) {
+//		return "Login " + login + ", senha: " + senha;
+//	}
 	
 //	@PostMapping()
 //	public String post() {
