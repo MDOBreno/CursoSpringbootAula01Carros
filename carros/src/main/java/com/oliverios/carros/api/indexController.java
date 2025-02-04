@@ -32,6 +32,11 @@ public class indexController {
 	public String getCarroById(@PathVariable String tipo) {
 		return "Lista de Carros " + tipo;
 	}
+
+	@PostMapping("/loginPost")
+	public String loginPost(@RequestParam("login") String login, @RequestParam("senha") String senha) {
+		return "Login " + login + ", senha: " + senha;
+	}
 	
 //	@GetMapping("/login")
 //	public String login(@RequestParam("login") String login, @RequestParam("senha") String senha) {
