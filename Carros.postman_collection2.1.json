@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "9c60cf1f-ad10-4ce3-91e1-7de6de8cb1fa",
+		"name": "Carros",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7410088"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9090/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "login",
+							"value": "cabra",
+							"type": "text"
+						},
+						{
+							"key": "senha",
+							"value": "chupa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9090/loginPost",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"loginPost"
+					],
+					"query": [
+						{
+							"key": "login",
+							"value": "Chupa",
+							"disabled": true
+						},
+						{
+							"key": "senha",
+							"value": "cabra",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
